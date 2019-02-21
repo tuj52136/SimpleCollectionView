@@ -9,5 +9,5 @@
 import Foundation
 
 protocol EventEditorDelegate {
-    func updateEventDescription(eventName : String)
+    func updateEventDescription(eventName : String, date : Date)
 }

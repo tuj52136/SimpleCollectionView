@@ -7,19 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9C3E243E2213E2170090CAA7 /* DataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9C3E243C2213E2170090CAA7 /* DataModel.xcdatamodeld */; };
 		9C58DC372200A8300027032F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C58DC362200A8300027032F /* AppDelegate.swift */; };
 		9C58DC392200A8300027032F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C58DC382200A8300027032F /* ViewController.swift */; };
 		9C58DC3C2200A8300027032F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C58DC3A2200A8300027032F /* Main.storyboard */; };
 		9C58DC3E2200A8320027032F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9C58DC3D2200A8320027032F /* Assets.xcassets */; };
 		9C58DC412200A8320027032F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C58DC3F2200A8320027032F /* LaunchScreen.storyboard */; };
 		9C58DC492200A8B30027032F /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C58DC482200A8B30027032F /* CollectionViewCell.swift */; };
-		9C58DC4B220276AE0027032F /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C58DC4A220276AE0027032F /* Event.swift */; };
 		9C58DC5522029F810027032F /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C58DC5422029F810027032F /* HeaderView.swift */; };
 		9CA3800B220CBB51007F9703 /* EventEditorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CA3800A220CBB50007F9703 /* EventEditorViewController.swift */; };
 		9CA3800F220CC090007F9703 /* EventEditorDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CA3800E220CC090007F9703 /* EventEditorDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9C3E243D2213E2170090CAA7 /* DataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DataModel.xcdatamodel; sourceTree = "<group>"; };
 		9C58DC332200A8300027032F /* SimpleCollectionView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimpleCollectionView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9C58DC362200A8300027032F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9C58DC382200A8300027032F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -28,7 +29,6 @@
 		9C58DC402200A8320027032F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9C58DC422200A8320027032F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9C58DC482200A8B30027032F /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
-		9C58DC4A220276AE0027032F /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
 		9C58DC5422029F810027032F /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
 		9CA3800A220CBB50007F9703 /* EventEditorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventEditorViewController.swift; sourceTree = "<group>"; };
 		9CA3800E220CC090007F9703 /* EventEditorDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventEditorDelegate.swift; sourceTree = "<group>"; };
@@ -45,6 +45,35 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9C3E24382213E1660090CAA7 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				9C58DC5422029F810027032F /* HeaderView.swift */,
+				9C58DC3A2200A8300027032F /* Main.storyboard */,
+				9C58DC482200A8B30027032F /* CollectionViewCell.swift */,
+				9C58DC3F2200A8320027032F /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		9C3E243A2213E1A10090CAA7 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				9C58DC382200A8300027032F /* ViewController.swift */,
+				9CA3800A220CBB50007F9703 /* EventEditorViewController.swift */,
+				9CA3800E220CC090007F9703 /* EventEditorDelegate.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		9C3E243B2213E1BD0090CAA7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				9C3E243C2213E2170090CAA7 /* DataModel.xcdatamodeld */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		9C58DC2A2200A8300027032F = {
 			isa = PBXGroup;
 			children = (
@@ -64,17 +93,12 @@
 		9C58DC352200A8300027032F /* SimpleCollectionView */ = {
 			isa = PBXGroup;
 			children = (
-				9C58DC5422029F810027032F /* HeaderView.swift */,
+				9C3E24382213E1660090CAA7 /* View */,
 				9C58DC362200A8300027032F /* AppDelegate.swift */,
-				9C58DC382200A8300027032F /* ViewController.swift */,
-				9C58DC4A220276AE0027032F /* Event.swift */,
-				9C58DC3A2200A8300027032F /* Main.storyboard */,
-				9C58DC482200A8B30027032F /* CollectionViewCell.swift */,
+				9C3E243A2213E1A10090CAA7 /* Controller */,
+				9C3E243B2213E1BD0090CAA7 /* Model */,
 				9C58DC3D2200A8320027032F /* Assets.xcassets */,
-				9C58DC3F2200A8320027032F /* LaunchScreen.storyboard */,
 				9C58DC422200A8320027032F /* Info.plist */,
-				9CA3800A220CBB50007F9703 /* EventEditorViewController.swift */,
-				9CA3800E220CC090007F9703 /* EventEditorDelegate.swift */,
 			);
 			path = SimpleCollectionView;
 			sourceTree = "<group>";
@@ -151,7 +175,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9CA3800B220CBB51007F9703 /* EventEditorViewController.swift in Sources */,
-				9C58DC4B220276AE0027032F /* Event.swift in Sources */,
+				9C3E243E2213E2170090CAA7 /* DataModel.xcdatamodeld in Sources */,
 				9C58DC5522029F810027032F /* HeaderView.swift in Sources */,
 				9C58DC392200A8300027032F /* ViewController.swift in Sources */,
 				9C58DC372200A8300027032F /* AppDelegate.swift in Sources */,
@@ -356,6 +380,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		9C3E243C2213E2170090CAA7 /* DataModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				9C3E243D2213E2170090CAA7 /* DataModel.xcdatamodel */,
+			);
+			currentVersion = 9C3E243D2213E2170090CAA7 /* DataModel.xcdatamodel */;
+			path = DataModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 9C58DC2B2200A8300027032F /* Project object */;
 }
